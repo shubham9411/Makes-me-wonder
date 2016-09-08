@@ -1,0 +1,512 @@
+/*
+Theme Name: Make Me Wonder
+Author: Shubham
+Author URI: justanotherblog.com
+Version: 1.0.5
+*/
+
+
+body{
+	background: url(assets/img/head.jpg);
+	min-height:500px;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+@media screen and (max-width:680px){
+	#header{}
+}
+.screen-reader-text{
+  display:none;
+}
+
+
+
+#canvas {
+  width: 90%;
+  padding: 20px;
+}
+#canvas #primaryContent{
+  width: 65%;
+  padding: 5px;
+  margin: 0 0 0 5%;
+}
+#canvas #secondaryContent{
+  width: 30%;
+  padding: 10px;
+}
+
+/*  to change color of any hyperlink 
+**********************************************/
+.headlink a:visited,
+.headlink a:hover{
+	color: white;
+}
+a:link{
+	text-decoration:none;
+}
+a:visited,
+a:link
+{
+	color: #666666;
+}
+a:hover{color:blue;}
+.hedlink  a{
+	text-decoration:none;
+	
+}
+/*********
+full width
+**************/
+#primaryContent .fullwidth{
+  width:100%;
+}
+/****888****************************************/
+
+
+#header {
+	
+	text-align:center;
+	color:white;
+	margin: 0 0 20px 0;	
+	padding: 300px 0px 20px 0px;
+}
+  /** the heading and tagline are h1 on homepage and h4 on internal */
+  #header h1,
+  #header h4 {
+    font-size: 50px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+
+	font-family: Verdana;
+  }
+    /** the tagline is a span within the h1 or h4 */
+    #header h1 span,
+    #header h4 span { font-family: Verdana;}
+
+  /****
+  Navigation bar setup to pyare color
+  
+  **/
+.nav{background:#111;
+}
+.nav ul{
+	padding:0px;
+	margin: 0px;
+}
+.nav ul li{
+	list-style:none;
+	display:inline-block;
+}
+.nav li:hover{
+	background-color:#09c;
+}
+.nav li a{
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:15px;
+}
+.nav ul li:hover ul{
+	display:block;
+  Color: #09c;
+}
+.nav ul ul{
+	display:none;
+	position:absolute;
+	background-color:#333;
+}
+
+.nav ul ul li{
+	display: block;
+}
+.nav ul ul li:hover a{
+	color: #111;
+}
+.nav ul li.current-menu-item a:link{
+	background-color:#09C;
+}
+  /*****************************************************/
+
+
+/**      main content ****************************    */
+#primaryContent {
+  float: left;
+   background-color:white;
+}
+
+  #primaryContent h1 {
+
+	font-weight:700;
+	
+	}
+
+  #primaryContent h2 {
+    padding: 0;
+
+  }
+
+  /* titles are h2 on homepage and h1 for internal 
+  
+  */
+  #primaryContent h1.postTitle,
+  #primaryContent h2.postTitle {
+    font: 22px;
+	font-family: Century Gothic, sans-serif;
+  }
+
+  #primaryContent h3 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  /************************primary ends***********************************/
+/*************************Full Content********************************************/
+
+#FullContent {
+  float: left;
+   background-color:white;
+}
+
+  #FullContent h1 {
+
+  font-weight:700;
+  
+  }
+
+  #FullContent h2 {
+    padding: 0;
+
+  }
+
+  /* titles are h2 on homepage and h1 for internal 
+  
+  */
+  #FullContent h1.postTitle,
+  #FullContent h2.postTitle {
+    font: 22px;
+  font-family: Century Gothic, sans-serif;
+  }
+
+  #FullContent h3 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+
+/********************************************************************************/
+
+  ol#posts {
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
+  }
+.postWrapper{
+  
+  padding: 10px 20px 10px 0;
+  margin: 0 10% 0 25px;
+}
+    li.postWrapper,
+    div.postWrapper { }
+
+      .postWrapper img { }
+
+      div.post { font-family:Century Gothic,verdana; }
+
+      p.postMeta { }
+	   .postWrapper small{ padding:3px 3px 3px 3px;
+	   font-family:arial;}
+
+  #pagination {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+    #pagination li {
+      display: inlne;
+    }
+    #pagination .previous {
+      text-align: left;
+      float: left;
+    }
+    #pagination .future {
+      text-align: right;
+      float: right;
+    }
+
+/**       sidebar  
+
+to change the side bar view
+
+        */
+#secondaryContent {
+  background-color: #111  ;
+  float: left;
+  font-family: Century Gothic, sans-serif;
+}
+  #secondaryContent h3 {
+    padding: 0;
+ 
+  }
+
+
+  #secondaryContent > ul {
+    list-style: none;
+    color: Red;
+    margin: 0;
+    padding: 0;
+	font-family: Century Gothic, sans-serif;
+  }
+    #secondaryContent > ul > li {
+      margin: 0 0 10px 0;
+	  list-style: none;
+	  padding:0;
+	  font-family: verdana;
+    }
+
+  .widget_tag_cloud a {
+    padding-left: 5px;
+  }
+
+#comment {
+  width: 100%;
+}
+
+#footer {
+  clear: both;
+  background-color:#90a090;
+  padding: 10px 0 10px 35%;
+}
+
+/** normally hidden but will appear when css disabled */
+.noCss {
+  position: absolute;
+  left: -9999px;
+}
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+.page_tt{ float:left; width:100%; padding:20px 0; text-align:center;}
+
+/*Search*/
+.search_term {width: 96%;padding: 2%;float: left;margin-top: 50px;text-align: center;}
+.search_term h2{ margin-bottom:5px;}
+.search_term #searchform #s, .error_msg #searchform #s{font-size:16px;border: none;-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;width: 70%;padding: 20px;margin-top: 30px;margin-bottom: 30px;background: rgba(0, 0, 0, 0.04); color:#999;}
+.search_term #searchsubmit, .error_msg #searchsubmit{ padding:20px 15px;font-size: 16px;font-weight: bold;cursor:pointer;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}
+.search_term #searchsubmit:hover, .error_msg #searchsubmit:hover{opacity:0.7;}
+
+/*404*/
+.fourofour a{font-size: 280px; opacity:0.4;}
+.error404 .postitle{margin-top: -30px;font-size: 50px;text-transform: uppercase; opacity:0.5;}
+.error_page{ text-align:center;}
+.error_msg {line-height: 2em;}
+.fourofour label a:hover{opacity:1;color:#333;}
+
+/**
+button
+
+**/
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit]{
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=submit]:hover {
+    padding:5px 15px; 
+    background:#666666; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+/***
+
+Typography
+
+***/
+.btn {
+	padding:10px;
+	background-color:#FF6600;
+	border-radius:5px;
+	display:inline-block;
+}
+.btn a{
+	color:#FFF;
+}
+.btn a:hover{
+padding:5px 15px; 
+     
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/******************************************************
+Author Bio etc the css
+*/
+.author_wrap{
+	padding: 0 20px 0 0;
+   background-color:white;
+  margin: 10px 10% 10px 10px;
+}
+.author_dsc{
+	font-family: verdana;
+	font-size:100%;
+	
+}
+.author_dsc h2{
+	font-family: verdana;
+	font-size:125%;
+}
+/****/
+
+#sidebar{
+
+	size:100%;
+}
+#sidebar ul a{display: block;
+  padding: 0.5em;
+  text-decoration: none;}
+
+  #sidebar ul a:hover{display: block;
+  background-color: #fff;
+  padding: 0.5em;
+  text-decoration: none;}
+
+#sidebar li { display: block;
+  text-decoration: none;}
+
+#sidebar ul li {display: block;
+  text-decoration: none; }
+
+#sidebar ul ul li {display: block;
+  text-decoration: none; }
+
+#sidebar ul ul ul li {display: block;
+  text-decoration: none; }
+
+#pagenav { display: block;
+  text-decoration: none;}
+
+#pagenav ul {display: block;
+  text-decoration: none; }
+
+#pagenav ul li {display: block;
+  text-decoration: none; }
+
+/**
+clear fix
+**/
+.clearfix{
+  clear: both;
+}
+
+/********************
+
+Responsive Design
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+
+    }
+}
+
+.container{
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #canvas {
+  width: 90%;
+  padding: 10px;
+}
+#canvas #primaryContent{
+  width: 67%;
+ padding: 5px;
+ margin: 0 0 0 0;
+
+}
+.fullwidth{
+
+  width: 100%;
+}
+#canvas #secondaryContent{
+  width: 30%;
+
+   padding: 8px;
+    margin: 0 0  0 3%;
+}
+
+#canvas #FullContent{
+  width: 100%;
+  padding: 5px;
+  float: left;
+  margin: 0 0 0 0%;
+}
+    }
+
+
+
+
+    @media only screen and (max-width: 768px) {
+    
+    #canvas {
+  width: 90%;
+  padding: 20px;
+}
+#canvas #primaryContent{
+  width: 100%;
+  padding: 5px;
+  float: left;
+  margin: 0 0 0 0%;
+}
+#canvas #FullContent{
+  width: 100%;
+  padding: 5px;
+  float: left;
+  margin: 0 0 0 0%;
+}
+#canvas #secondaryContent{
+  width: 100%;
+  padding: 10px;
+  float: right;
+}
+
+    
+    }
+
